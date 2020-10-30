@@ -9,6 +9,7 @@ import Post from "./components/Post"
 class App extends Component {
   render() {
     // console.log(" rendering now ")
+    console.log("App stored ", this.props)
     return (
       <BrowserRouter>
         <div className="App">

@@ -9,6 +9,9 @@ import rootReducer from "./reducers/rootReducer"
 
 
 const store = createStore(rootReducer);
+console.log("Index rootreducer",rootReducer)
+console.log("Index Store ! ",store)
+
 
 ReactDOM.render(
   <React.StrictMode>

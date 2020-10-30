@@ -9,7 +9,6 @@ class Home extends Component {
     // state = {
     //     posts: []
     // }
-
    //No need as now we are using redux
     // componentDidMount() {
     //     axios("https://jsonplaceholder.typicode.com/posts")
@@ -22,7 +21,7 @@ class Home extends Component {
     // }
 
     render() {
-        console.log(this.props)
+        console.log("Home ",this.props)
 
        //redux// const { posts } = this.state;
         const { posts } = this.props;
@@ -65,7 +64,8 @@ class Home extends Component {
     }
 }
 
-const mapStateToProps = (state)=>{
+const mapStateToProps = (state, ownprops)=>{
+    console.log("Own props ", ownprops)
 return {
     posts:state.posts
 }
